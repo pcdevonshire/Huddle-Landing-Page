@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+    --white: #fff;
+    --OpenSans: 'Open Sans', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--violet);
+}
+
+body {
+    background-image: url(images/bg-mobile.svg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    color: var(--white);
+    min-height: 100vh;
+    min-width: 375px;
+    max-width: 1980px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    font-family: var(--OpenSans);
+    padding: 2em 2em 0 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.container > img {
+    width: 150px;
+    margin-bottom: 4em;
+}
+
+.main img {
+    filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+    margin: 0 auto 3em auto;
+}
+
+.info {
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--Poppins);
+    font-size: 26px;
+    margin-bottom: 0.75em;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 2.5em;
+}
+
+a {
+    font-family: var(--Poppins);
+    color: var(--violet);
+    background-color: var(--white);
+    padding: 1em 5em;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: var(--white);
+    background-color: var(--magenta);
+}
+
+.icons {
+    margin: 5em auto 3em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+i {
+    color: var(--white);
+    transition: all 0.3s;    
+}
+
+i:hover {
+    color: var(--magenta);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1265px) {
+    
+    body {
+        background-image: url(images/bg-desktop.svg);
+        padding:  3em 5em;
+    }
+
+    .container {
+        max-width: 1280px;
+    }
+    
+    .container > img {
+        width: 250px;
+        margin-bottom: 5em;
+    }
+    
+    .main {
+        display: flex;
+    }
+
+    .main img {
+        flex: 1;
+        margin: 0 auto;
+    }
+    
+    .info {
+        flex: 1;
+        text-align: left;
+        padding: 3em 0 0 3em;
+    }
+    
+    h1 {
+        font-size: 40px;
+        margin-bottom: 0.5em;
+    }
+    
+    p {
+        font-size: 18px;
+        margin-bottom: 2em;
+    }
+    
+    a {
+        padding: 1em 4em;
+    }
+    
+    .icons {
+        margin: 1em 0 0 0;
+        justify-content: right;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
